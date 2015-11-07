@@ -1,0 +1,2 @@
+# osgEarthX-binary
+osgEarthX executables
