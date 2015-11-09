@@ -7,11 +7,10 @@
 <h4>配置环境变量</h4>
 <ol>
 	<li>在“我的电脑”图标中点击鼠标右键查看系统“属性”，在系统属性窗体左侧点击“高级系统设置”，在系统属性对话框中点击“环境变量”按钮弹出环境变量设置对话框。
-
-[caption id="" align="aligncenter" width="1366"]<a href="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109011240059.png?1366x768_130" target="_blank"><img src="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109011240059.png?1366x768_130" alt="设置系统环境变量" width="1366" height="768" /></a> 设置系统环境变量[/caption]</li>
+<a href="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109011240059.png?1366x768_130" target="_blank"><img src="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109011240059.png?1366x768_130" alt="设置系统环境变量" width="1366" height="768" /></a> 设置系统环境变量</li>
 	<li>点击“系统变量”中“新建”按钮，新建一个“变量名”为“OSG_DIR”（不包含双引号，下同）的变量，“变量值”为osgEarthX可执行程序所在的目录，例如“E:\OpenSceneGraph\osgEarthX-binary\”，点击“确定”按钮完成添加。
 
-[caption id="" align="aligncenter" width="409"]<a href="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109012922092.png?409x188_130" target="_blank"><img src="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109012922092.png?409x188_130" alt="编辑系统变量" width="409" height="188" /></a> 编辑系统变量[/caption]</li>
+<a href="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109012922092.png?409x188_130" target="_blank"><img src="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109012922092.png?409x188_130" alt="编辑系统变量" width="409" height="188" /></a> 编辑系统变量</li>
 	<li>与步骤2同样，新建一个“变量名”为“OSG_BIN_DIR”的变量，值为“;%OSG_DIR%\bin;”（分号为英文分号，下同）。</li>
 	<li>新建一个“变量名”为“OSG_FILE_PATH”的变量，值为“;%OSG_DIR%\data;%OSG_DIR%\tests;”。</li>
 	<li>选中“PATH”变量进行编辑，在值编辑框的最后添加“;%OSG_BIN_DIR%;”。</li>
@@ -29,7 +28,9 @@
 </ol>
 如果以上命令都能被执行，并显示出正确的信息，那么说明 osgEarthX 的环境基本上已经完成。
 
-[caption id="" align="aligncenter" width="1366"]<a href="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109013653089.png?1366x768_130" target="_blank"><img src="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109013653089.png?1366x768_130" alt="osgearth_viewer gdal_tiff.earth" width="1366" height="768" /></a> osgearth_viewer gdal_tiff.earth[/caption]
+<a href="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109013653089.png?1366x768_130" target="_blank"><img src="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109013653089.png?1366x768_130" alt="osgearth_viewer gdal_tiff.earth" width="1366" height="768" /></a> 
+osgearth_viewer gdal_tiff.earth
+
 <h4>注册 osgEarthX_COM 组件</h4>
 <ol>
 	<li>找到 osgEarthX 可执行文件目录 bin 目录下的 osgEarthX_COM.dll 文件的绝对路径，例如我的是“E:\OpenSceneGraph\osgEarthX-binary\bin\osgEarthX_COM.dll”。</li>
@@ -37,7 +38,7 @@
 	<li>如果要卸载该组件，可运行“regsvr32 \u ”加上你的绝对路径，例如“regsvr32 \u E:\OpenSceneGraph\osgEarthX-binary\bin\osgEarthX_COM.dll”。</li>
 	<li>如果注册成功，可点击osgEarthX可执行程序目录下demo目录下的Demo_WinForm.bat运行示例，如果一切正常，将会显示如下程序。
 
-[caption id="" align="aligncenter" width="296"]<a href="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109014119017.png?296x298_130" target="_blank"><img src="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109014119017.png?296x298_130" alt="test_CSharp" width="296" height="298" /></a> test_CSharp[/caption]</li>
+<a href="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109014119017.png?296x298_130" target="_blank"><img src="http://img17.poco.cn/mypoco/myphoto/20151109/01/17843243820151109014119017.png?296x298_130" alt="test_CSharp" width="296" height="298" /></a> test_CSharp</li>
 </ol>
 <h4>更多阅读</h4>
 <ul>
