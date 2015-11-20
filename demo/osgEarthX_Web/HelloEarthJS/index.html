@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<script type="text/javascript" src="../../../js/Earth.js"></script>
+		<style type="text/css">
+			html,
+			body,
+			#container{
+				width: 100%;
+				height: 100%;
+				margin: 0px;
+				padding: 0px;
+			}
+
+			#osgEarthXWeb{
+				width: 100%;
+				height: 80%;
+			}
+		</style>
+	</head>
+	<script type="text/javascript">
+		function onOsgEarthXWebPluginLoaded(){
+			var pluginDOM = document.getElementById( 'osgEarthXWeb' );
+			var osgEarthXWeb = new OsgEarthXWeb( pluginDOM );
+			
+			var earth = osgEarthXWeb.earth;//地球控件
+			var earthMap = earth.getEarthMap();//地球地图
+			var earthRoot = earth.getEarthRoot();//地球场景根节点
+			
+			//最大加载物体线程数
+			earthMap.maxThreadsNum = 10;
+
+			//设置天空
+			var sky = new osgEarthXWeb.Sky();
+			earth.setActiveSky( sky );
+
+			//添加影像图层
+			var gdalTileSource = new osgEarthXWeb.TileSourceGDAL();
+			gdalTileSource.url = 'E:\\OpenSceneGraph\\osgEarthX-binary\\data\\world.tif';//这里的url是相对于osgEarthX_Web.dll所在的目录；最好是绝对的路径。
+			var imageLayer = new osgEarthXWeb.ImageSurfaceLayer();
+			imageLayer.tileSource = gdalTileSource;
+			earthRoot.addChild( imageLayer );
+
+			earth.run();//运行三维地球
+		}
+	</script>
+	<body>
+		<div id="container">
+			<object id="osgEarthXWeb" type="application/x-earthweb">
+				<param name="onload" value="onOsgEarthXWebPluginLoaded">
+			</object>
+		</div>
+	</body>
+</html>
