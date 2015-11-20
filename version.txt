@@ -1,4 +1,6 @@
 版本：v0.1-2015-11-20-r1
 
 ------------------------
-hacksome.cn
+作者：罗浩
+网址：hacksome.cn
+邮件：hacker@hacksome.cn
