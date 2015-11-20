@@ -1,0 +1,10 @@
+{
+	"name" : "osgEarthXWebDemo",
+	"main" : "../HelloEarthJS/index.html",
+	"window" : {
+		"title" : "osgEarthXWeb"
+	},
+	"webkit" : {
+		"plugin" : true
+	}
+}
